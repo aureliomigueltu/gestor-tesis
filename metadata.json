@@ -1,0 +1,6 @@
+{
+  "name": "Panel de Control de Tesis",
+  "description": "Panel de control integral para gestionar el avance de tesis, capítulos, matriz de consistencia, fuentes bibliográficas APA 7, observaciones del asesor y tareas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
