@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { 
-  GraduationCap, 
-  Lock, 
-  User, 
-  Eye, 
-  EyeOff, 
-  ShieldCheck, 
-  Sparkles, 
-  AlertCircle, 
+import {
+  GraduationCap,
+  Lock,
+  User,
+  Eye,
+  EyeOff,
+  ShieldCheck,
+  Sparkles,
+  AlertCircle,
   ArrowRight,
   CheckCircle2,
   BookOpen
@@ -69,7 +69,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 flex flex-col justify-center items-center p-4 sm:p-6 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950">
       <div className="w-full max-w-md space-y-6">
-        
+
         {/* Brand & Logo Header */}
         <div className="text-center space-y-3">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-400 text-slate-950 shadow-lg shadow-amber-400/20 ring-4 ring-white/10">
@@ -180,59 +180,6 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess }) => {
               )}
             </button>
           </form>
-
-          {/* Quick Demo Access Credentials */}
-          <div className="pt-2 border-t border-slate-100 space-y-2.5">
-            <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider text-center">
-              Accesos Rápidos Demo (1 Clic)
-            </div>
-
-            <div className="grid grid-cols-1 gap-2">
-              <button
-                type="button"
-                onClick={() => handleQuickFill('admin')}
-                className="p-2.5 bg-amber-50/80 hover:bg-amber-100/80 border border-amber-200/80 rounded-xl text-left transition-all group"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-bold text-amber-900">👑 Asesor: Ing. Aurelio Tacuri Urquizo</span>
-                  <span className="text-[9px] px-1.5 py-0.5 rounded-sm bg-amber-400 text-slate-950 font-bold">Llenar</span>
-                </div>
-                <div className="text-[10px] text-amber-700/90 mt-0.5 font-mono">
-                  admin / admin123 <span className="text-amber-500 font-sans">(Control total y gestión de tesistas)</span>
-                </div>
-              </button>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                <button
-                  type="button"
-                  onClick={() => handleQuickFill('lester')}
-                  className="p-2.5 bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200/80 rounded-xl text-left transition-all group"
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="text-[11px] font-bold text-blue-900">🎓 Tesista: Lester</span>
-                    <span className="text-[9px] px-1.5 py-0.5 rounded-sm bg-blue-600 text-white font-bold">Llenar</span>
-                  </div>
-                  <div className="text-[10px] text-blue-700/90 mt-0.5 font-mono">
-                    lester / lester123
-                  </div>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => handleQuickFill('jose')}
-                  className="p-2.5 bg-indigo-50/80 hover:bg-indigo-100/80 border border-indigo-200/80 rounded-xl text-left transition-all group"
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="text-[11px] font-bold text-indigo-900">🎓 Tesista: Jose</span>
-                    <span className="text-[9px] px-1.5 py-0.5 rounded-sm bg-indigo-600 text-white font-bold">Llenar</span>
-                  </div>
-                  <div className="text-[10px] text-indigo-700/90 mt-0.5 font-mono">
-                    jose / jose123
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Roles Details Card */}
